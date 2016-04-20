@@ -26,34 +26,42 @@ namespace WebFormLogin.UI2
             {
                 Notification.Text = "Please input name";
             }
-            if (subname.StringIsNullEmptyWhiteSpace())
+            else if (subname.StringIsNullEmptyWhiteSpace())
             {
                 Notification.Text = "Please input sub name";
             }
-            if (nickname.StringIsNullEmptyWhiteSpace())
+            else if (nickname.StringIsNullEmptyWhiteSpace())
             {
-                Notification.Text = "Please input nikc name";
+                Notification.Text = "Please input nick name";
             }
-            if (password.StringIsNullEmptyWhiteSpace())
+            else if (userService.CheckUserNameExist(nickname))
+            {
+                Notification.Text = "Nick name exist";
+            }
+            else if (password.StringIsNullEmptyWhiteSpace())
             {
                 Notification.Text = "Please input password";
             }
-            var user = new User();
-            user.Name = name;
-            user.SurName = subname;
-            user.Email = email;
-            user.Phone = phone;
-            user.UserName = nickname;
-            user.Password = password;
-            var model = userService.AddUser(user);
-            if (model.IsNull())
-            {
-                Notification.Text = "Please try again";
-            }
             else
             {
-                Response.Redirect("RegisterSuccess.aspx");
+                var user = new User();
+                user.Name = name;
+                user.SurName = subname;
+                user.Email = email;
+                user.Phone = phone;
+                user.UserName = nickname;
+                user.Password = password.HashPassword();
+                var model = userService.AddUser(user);
+                if (model.IsNull())
+                {
+                    Notification.Text = "Please try again";
+                }
+                else
+                {
+                    Response.Redirect("RegisterSuccess.aspx");
+                }
             }
+
 
         }
     }

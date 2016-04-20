@@ -9,31 +9,31 @@
     </div>
     <div class="form-group">
         <label for="Name">Name</label>
-        <asp:TextBox ID="Name" runat="server" class="form-control"></asp:TextBox>
+        <asp:TextBox ID="Name" runat="server" class="form-control" data-rule-required="true"></asp:TextBox>
     </div>
     <div class="form-group">
         <label for="SurName">Sur Name</label>
-        <asp:TextBox ID="SurName" runat="server" class="form-control"></asp:TextBox>
+        <asp:TextBox ID="SurName" runat="server" class="form-control" data-rule-required="true"></asp:TextBox>
     </div>
     <div class="form-group">
         <label for="Email">Email</label>
-        <asp:TextBox ID="Email" runat="server" class="form-control"></asp:TextBox>
+        <asp:TextBox ID="Email" runat="server" class="form-control" data-rule-email="true"></asp:TextBox>
     </div>
     <div class="form-group">
         <label for="Phone">Phone</label>
-        <asp:TextBox ID="Phone" runat="server" class="form-control"></asp:TextBox>
+        <asp:TextBox ID="Phone" runat="server" class="form-control" data-rule-digits="true"></asp:TextBox>
     </div>
     <div class="form-group">
         <label for="NickName">Nick Name</label>
-        <asp:TextBox ID="NickName" runat="server" class="form-control"></asp:TextBox>
+        <asp:TextBox ID="NickName" runat="server" class="form-control" data-rule-required="true"></asp:TextBox>
     </div>
     <div class="form-group">
         <label for="Password">Password</label>
-        <asp:TextBox ID="Password" runat="server" class="form-control"></asp:TextBox>
+        <asp:TextBox ID="Password" TextMode="Password"  runat="server" class="form-control" data-rule-required="true"></asp:TextBox>
     </div>
     <div class="form-group">
         <label for="ConfirmPassword">Confirm Password</label>
-        <asp:TextBox ID="ConfirmPassword" runat="server" class="form-control"></asp:TextBox>
+        <asp:TextBox ID="ConfirmPassword" TextMode="Password" runat="server" class="form-control" data-rule-equalto="#Password"></asp:TextBox>
     </div>
     <div class="form-group text-center">
         <asp:Button ID="Button2" runat="server" Text="Reset" class="btn btn-default" />

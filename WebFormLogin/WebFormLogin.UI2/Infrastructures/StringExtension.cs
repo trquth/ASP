@@ -14,5 +14,9 @@ namespace WebFormLogin.UI2.Infrastructures
                 return true;
             return false;
         }
+        public static string HashPassword(this string value)
+        {
+            return MD5.Hash(value);
+        }
     }
 }

@@ -5,11 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using WebFormLogin.DataAccess.Models;
 
-namespace WebFormLogin.UI2.Services
+namespace WebFormLogin.DataAccess.Repositories
 {
-    public interface IUserService
+    public interface IContactRepository : IBaseRepository<Contact>
     {
-        User AddUser(User user);
-        bool CheckUserNameExist(string userName);
     }
 }
