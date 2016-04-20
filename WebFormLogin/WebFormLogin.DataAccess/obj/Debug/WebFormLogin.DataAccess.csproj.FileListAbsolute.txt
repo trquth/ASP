@@ -1,0 +1,10 @@
+D:\Git\AngularJS\ASP\WebFormLogin\WebFormLogin.DataAccess\bin\Debug\WebFormLogin.DataAccess.dll.config
+D:\Git\AngularJS\ASP\WebFormLogin\WebFormLogin.DataAccess\bin\Debug\WebFormLogin.DataAccess.dll
+D:\Git\AngularJS\ASP\WebFormLogin\WebFormLogin.DataAccess\bin\Debug\WebFormLogin.DataAccess.pdb
+D:\Git\AngularJS\ASP\WebFormLogin\WebFormLogin.DataAccess\bin\Debug\EntityFramework.dll
+D:\Git\AngularJS\ASP\WebFormLogin\WebFormLogin.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git\AngularJS\ASP\WebFormLogin\WebFormLogin.DataAccess\bin\Debug\EntityFramework.xml
+D:\Git\AngularJS\ASP\WebFormLogin\WebFormLogin.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\AngularJS\ASP\WebFormLogin\WebFormLogin.DataAccess\obj\Debug\WebFormLogin.DataAccess.csprojResolveAssemblyReference.cache
+D:\Git\AngularJS\ASP\WebFormLogin\WebFormLogin.DataAccess\obj\Debug\WebFormLogin.DataAccess.dll
+D:\Git\AngularJS\ASP\WebFormLogin\WebFormLogin.DataAccess\obj\Debug\WebFormLogin.DataAccess.pdb
