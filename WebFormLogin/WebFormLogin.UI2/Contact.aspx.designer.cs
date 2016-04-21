@@ -13,6 +13,51 @@ namespace WebFormLogin.UI2 {
     public partial class Contact {
         
         /// <summary>
+        /// lnkLogout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkLogout;
+        
+        /// <summary>
+        /// AuthenticatedMessagePanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel AuthenticatedMessagePanel;
+        
+        /// <summary>
+        /// WelcomeBackMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label WelcomeBackMessage;
+        
+        /// <summary>
+        /// AnonymousMessagePanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel AnonymousMessagePanel;
+        
+        /// <summary>
+        /// NotificationSuccess control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label NotificationSuccess;
+        
+        /// <summary>
         /// Notification control.
         /// </summary>
         /// <remarks>
@@ -58,15 +103,6 @@ namespace WebFormLogin.UI2 {
         protected global::System.Web.UI.WebControls.TextBox Phone;
         
         /// <summary>
-        /// NickName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NickName;
-        
-        /// <summary>
         /// Opinion control.
         /// </summary>
         /// <remarks>
@@ -74,15 +110,6 @@ namespace WebFormLogin.UI2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Opinion;
-        
-        /// <summary>
-        /// Button2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
         /// btnSent control.

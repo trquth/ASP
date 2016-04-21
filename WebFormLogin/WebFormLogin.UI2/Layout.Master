@@ -11,16 +11,23 @@
     <script src="Scripts/jquery.validate.min.js"></script>
     <script>
         $(document).ready(function () {
+
+            $("#ContentPlaceHolder1_NotificationSuccess").delay(5000).fadeOut('slow')
             $('#frmRegister').validate();
         })
-      
+
     </script>
     <style>
         span.error {
             color: red;
         }
+
+        span.success {
+            color: green;
+        }
+
         label.error {
-            color:red;
+            color: red;
         }
     </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -45,6 +52,9 @@
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="/Register.aspx">Register Now</a>
+                    </li>
+                    <li>
+                        <a href="/TableList.aspx">Reserve</a>
                     </li>
                     <li>
                         <a href="/Contact.aspx">Contact</a>

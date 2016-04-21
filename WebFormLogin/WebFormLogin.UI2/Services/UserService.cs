@@ -17,6 +17,16 @@ namespace WebFormLogin.UI2.Services
             return userRepository.Insert(user);
         }
 
+        public bool CheckUserNameAndPassword(string userName, string password)
+        {
+            var model = userRepository.SingleBy(x => (x.UserName == userName&&x.Password==password));
+            if (model.IsNotNull())
+            {
+                return true;
+            }
+            return false;
+        }
+
         public bool CheckUserNameExist(string userName)
         {
             var model = userRepository.SingleBy(x => x.Name == userName);

@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 
 namespace WebFormLogin.UI2.Services
 {
-    public interface IContactService
+    public interface ITableService
     {
-        WebFormLogin.DataAccess.Models.Contact AddContact(WebFormLogin.DataAccess.Models.Contact contact);
+        IEnumerable<WebFormLogin.DataAccess.Models.Table> GetAll();
     }
 }

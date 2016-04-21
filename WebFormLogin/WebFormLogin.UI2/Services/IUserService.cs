@@ -11,5 +11,6 @@ namespace WebFormLogin.UI2.Services
     {
         User AddUser(User user);
         bool CheckUserNameExist(string userName);
+        bool CheckUserNameAndPassword(string userName, string password);
     }
 }

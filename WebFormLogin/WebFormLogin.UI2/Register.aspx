@@ -29,14 +29,13 @@
     </div>
     <div class="form-group">
         <label for="Password">Password</label>
-        <asp:TextBox ID="Password" TextMode="Password"  runat="server" class="form-control" data-rule-required="true"></asp:TextBox>
+        <asp:TextBox ID="Password" TextMode="Password"  runat="server" class="form-control password" data-rule-required="true" ></asp:TextBox>
     </div>
     <div class="form-group">
         <label for="ConfirmPassword">Confirm Password</label>
-        <asp:TextBox ID="ConfirmPassword" TextMode="Password" runat="server" class="form-control" data-rule-equalto="#Password"></asp:TextBox>
+        <asp:TextBox ID="ConfirmPassword" TextMode="Password" runat="server" class="form-control" data-rule-equalto=".password"></asp:TextBox>
     </div>
     <div class="form-group text-center">
-        <asp:Button ID="Button2" runat="server" Text="Reset" class="btn btn-default" />
         <asp:Button ID="btnRegister" OnClick="btnRegister_Click" runat="server" Text="Register" class="btn btn-success" />
     </div>
 

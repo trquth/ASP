@@ -18,5 +18,7 @@ namespace WebFormLogin.DataAccess
 
         public DbSet<User> User { get; set; }
         public DbSet<Contact> Contact { get; set; }
+        public DbSet<Table> Table { get; set; }
+        public DbSet<ReserveDetail> ReserveDetail { get; set; }
     }
 }

@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebFormLogin.UI2.Services
 {
-    public interface IContactService
+    interface IReserveDetailService
     {
-        WebFormLogin.DataAccess.Models.Contact AddContact(WebFormLogin.DataAccess.Models.Contact contact);
     }
 }

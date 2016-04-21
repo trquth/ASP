@@ -13,6 +13,15 @@ namespace WebFormLogin.UI2 {
     public partial class LogIn {
         
         /// <summary>
+        /// Notification control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Notification;
+        
+        /// <summary>
         /// UserName control.
         /// </summary>
         /// <remarks>

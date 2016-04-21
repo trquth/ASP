@@ -4,6 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="form-group">
+        <asp:Label ID="Notification" runat="server" Text="" class="error"></asp:Label>
+    </div>
+    <div class="form-group">
         <label for="UserName">User Name:</label>
         <asp:TextBox ID="UserName" runat="server" class="form-control" data-rule-required="true"></asp:TextBox>
     </div>
@@ -13,7 +16,7 @@
     </div>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-            <asp:Button ID="btnLogin" runat="server" Text="Login" class="btn btn-success" />
+            <asp:Button ID="btnLogin" OnClick="btnLogin_Click" runat="server" Text="Login" class="btn btn-success" />
             <asp:HyperLink ID="likRegister" class="btn btn-primary" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink>
         </div>
     </div>
